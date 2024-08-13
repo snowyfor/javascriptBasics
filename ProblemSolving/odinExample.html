@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        1. user input a number
+        2. print 1 - numberInput with loop
+        3. in loop, if multiples of three print Fizz
+        4. in loop, if multiples of five print Buzz
+        5. in loop, if multiples of both three and five print FizzBuzz
+        6. in loop, else output the number
+
+        We wrapped the prompt call in a parseInt function so that a number is returned from the user’s input.
+        */
+
+        // This is my answer(based on little experience)
+        let a = parseInt(prompt("Input Number: "));
+
+        for (let i = 1; i <= a; i++) {
+            if ((i % 3 === 0) && (i % 5 === 0)) { console.log("FizzBuzz") }
+            else if (i % 3 === 0) { console.log("Fizz") }
+            else if (i % 5 === 0) { console.log("Buzz") }
+            else { console.log(i) }
+        }
+    </script>
+</body>
+</html>
