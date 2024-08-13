@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // True or False
+        5 > 4
+        "apple" > "pineapple"
+        "2" > "12"
+        undefined == null
+        undefined === null
+        null == "\n0\n"
+        null === +"\n0\n"
+        // see the answer below
+
+
+
+
+
+
+
+
+
+
+
+
+
+        5 > 4  //True
+        "apple" > "pineapple"  //False, unicode comparison "a" is smaller than "p"
+        "2" > "12"  //True, unicode comparison, first char "2" is greater than the first char "1"
+        undefined == null  //True, values 'null' and 'undefined' equal each other
+        undefined === null  //False, Strict equality is strict. Different types from both sides lead to false.
+        null == "\n0\n"  //False, Similar to (4), null only equals undefined
+        null === +"\n0\n"  //False, Strict equality of different types
+
+    </script>
+</body>
+</html>

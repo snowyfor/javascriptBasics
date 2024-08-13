@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // What are results of these expressions?
+        "" + 1 + 0
+        "" - 1 + 0
+        true + false
+        6 / "3"
+        "2" * "3"
+        4 + 5 + "px"
+        "$" + 4 + 5
+        "4" - 2
+        "4px" - 2
+        "  -9  " + 5
+        "  -9  " - 5
+        null + 1
+        undefined + 1
+        " \t \n" - 2
+        // see the answer below
+        /* note: baca rangkuman sblm mengerjakan
+                 + represent concat if there's number + string,
+                but represent operator if there's number + number.
+                 - / * will represent operator if there's number with string,
+                 the string itself will convert to number,
+        */
+
+
+
+
+
+
+
+
+
+
+
+        // di web juga ada pembahasannya
+        "" + 1 + 0 // "10" (string with number in +, represent concat)
+        "" - 1 + 0 // -1 (because - dont represent concat, then + represent operator because -1 + 0)
+        true + false // 1 (1 + 0)
+        6 / "3" // 2 (string with number in / * - represent operator[except in +, it'll represent concat])
+        "2" * "3" // 6
+        4 + 5 + "px" // "9px" (the first + represent operator, but the second represent concat)
+        "$" + 4 + 5 // "$45"
+        "4" - 2 // 2
+        "4px" - 2 // NaN
+        "  -9  " + 5 // "  -9  5" (because + represent concat)
+        "  -9  " - 5 // -14 (because - dont represent concat)
+        null + 1 // 1
+        undefined + 1 // NaN
+        " \t \n" - 2 // -2 (because - is operator, not concat)
+    </script>
+</body>
+</html>

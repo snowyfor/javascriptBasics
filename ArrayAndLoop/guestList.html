@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const people = ['Chris', 'Anne', 'Colin', 'Terri', 'Phil', 'Lola', 'Sam', 'Kay', 'Bruce'];
+
+        const admitted = document.querySelector('.admitted');
+        const refused = document.querySelector('.refused');
+
+        admitted.textContent = 'Admit: ';
+        refused.textContent = 'Refuse: ';
+
+        // loop starts here
+        for (const person of people) {
+        if (person === 'Phil' || person === 'Lola') {
+            refused.textContent += `${person}, `;
+        } else {
+            admitted.textContent += `${person}, `;
+        }
+        }
+
+        // menghapus tanda koma & spasi di akhir & menambahkan titik
+        refused.textContent =
+        refused.textContent.slice(0, refused.textContent.length-2) + '.';
+        admitted.textContent =
+        admitted.textContent.slice(0, admitted.textContent.length-2) + "."; 
+
+        // kita menggunakan '.length-2' untuk menghapus dua karakter terakhir (", ")
+        // karena .length di sini merupakan string.length bukan array.length
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do test in mdn web</title>
+</head>
+<body>
+    <script>
+        let finalResult;
+        let evenOddResult;
+
+        // Add your code here
+        let a = 1;
+        let b = 2;
+        let c = 3;
+        let d = 19;
+
+        a += b;
+        d -= c;
+
+        finalResult = a * d;
+        evenOddResult = finalResult % 2;
+
+
+        // Don't edit the code below here!
+
+        section.innerHTML = ' ';
+        const para1 = document.createElement('p');
+        const finalResultCheck = finalResult === 48 ? `Yes, well done!` : `No, it is ${ finalResult }`;
+        para1.textContent = `Is the finalResult 48? ${ finalResultCheck }`;
+        const para2 = document.createElement('p');
+        const evenOddResultCheck = evenOddResult === 0 ? 'The final result is even!' : 'The final result is odd. Hrm.';
+        para2.textContent = evenOddResultCheck;
+
+        section.appendChild(para1);
+        section.appendChild(para2);
+    
+    </script>
+</body>
+</html>
